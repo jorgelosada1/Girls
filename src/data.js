@@ -26,12 +26,12 @@ export const medios = [
     },
     guion: 'En este segundo paso nuestro podcast tenemos una adolescente víctima de violencia intrafamiliar donde nos contará un poco del inicio de este dolor que ha tenido que llevar por mucho tiempo también nos contara que consecuencias, que impedimentos ha tenido a raíz de este abuso hablaremos un poco para que conozcan esta historia conmovedora que nos llenara de dolor, rabia e impotencia.',
     preguntas: [
-      '¿Quién eras antes de vivir esta situación y cuáles eran tus sueños para el futuro?',
-      'En este momento ella va a ponerse sentimental ¿Cuándo entendiste que lo que estabas viviendo era violencia y qué fue lo más difícil de afrontar?',
-      '¿Cómo afectó esa experiencia tu autoestima, tu salud mental y la forma en que veías la vida?',
-      '¿Qué te llevó a buscar ayuda y quién estuvo a tu lado cuando más lo necesitabas?',
-      '¿Cómo lograste transformar el dolor en fortaleza y qué aprendizaje te dejó este proceso?',
-      'Mensaje para quienes hoy sufren en silencio ¿Qué le dirías a una persona que está viviendo violencia intrafamiliar y siente que no tiene salida?',
+      '¿Cuándo te diste cuenta de que tu hogar ya no era un lugar seguro?',
+      '¿Aún sigue sucediendo esto en tu hogar?',
+      'Al vivir algo así, ¿cómo cambia tu forma de ver el mundo y en qué afectó tu autoestima?',
+      '¿Cómo fue sobrellevar ese dolor en silencio durante tanto tiempo?',
+      '¿Cuál fue ese instante o ese pensamiento que te hizo decir “no más”?',
+      '¿Cómo lograste transformar ese dolor en fortaleza?',
     ],
   },
   {
