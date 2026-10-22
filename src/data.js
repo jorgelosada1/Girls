@@ -12,37 +12,11 @@ export const medios = [
     id: 'podcast',
     formato: 'Podcast',
     icono: 'microfono',
-    titulo: 'La experiencia cuenta historias que también pueden salvar vidas',
+    titulo: 'Detrás de cada cifra existe una voz que merece ser escuchada',
     youtube: 'TgIz4TAAAMw',
     w: {
       '¿Qué es?':
-        'Es un podcast basado en una entrevista a un policía pensionado de la Policía Nacional que trabajó durante 15 años en el área de Infancia y Adolescencia. A través de su experiencia profesional, comparte conocimientos, relatos de casos y reflexiones sobre los delitos que afectan a niños, niñas y adolescentes.',
-      '¿Por qué se presenta?':
-        'Se presenta para brindar una perspectiva profesional sobre la atención de los casos relacionados con la niñez y la adolescencia, sensibilizar a la audiencia sobre esta problemática y orientar a las víctimas y sus familias sobre los canales de apoyo y las rutas de atención disponibles.',
-      '¿Cuándo se presenta?':
-        'Se desarrolla a partir de la experiencia acumulada por el entrevistado durante sus 15 años de servicio en el área de Infancia y Adolescencia, donde tuvo contacto directo con diferentes casos y situaciones que marcaron su trayectoria profesional.',
-      '¿Dónde se presenta?':
-        'Se presenta en formato sonoro a través de un podcast, un espacio de conversación en el que el entrevistado comparte sus experiencias, relatos y recomendaciones relacionadas con la protección de la niñez y la adolescencia.',
-    },
-    guion: 'En este primer paso que realizaremos será la entrevista a un pensionado de la policía nacional de Colombia el cual se llevaran preguntas de los cargos en los cuales él estuvo presente en este caso estaremos hablando de los abusos que cometen con la infancia y adolescencia en Colombia más exactamente en Bogotá y también que nos cuente un poco la experiencia de estos casos y cuáles son los canales de comunicación que nos recomienda para alguien que quiere realizar una denuncia.',
-    preguntas: [
-      '¿Qué es lo más difícil que ha visto en su trabajo protegiendo a niños, niñas y adolescentes en Bogotá?',
-      '¿Cuáles son hoy los delitos que más están afectando a nuestros niños y adolescentes, tanto en las calles como en internet?',
-      'Cuando un menor es víctima de un delito, ¿cómo cambia su vida y la de su familia?',
-      '¿Qué señales nunca debemos ignorar y que podrían indicar que un niño está siendo víctima de violencia, abuso o explotación?',
-      'Muchas personas sospechan que algo está pasando, pero no denuncian. ¿Por qué es tan importante actuar a tiempo y cómo puede hacerlo cualquier ciudadano?',
-      'Si pudiera dejar un solo mensaje a los padres, docentes y ciudadanos de Bogotá para proteger a nuestros niños, ¿cuál sería?',
-    ],
-  },
-  {
-    id: 'entrevista',
-    formato: 'Entrevista',
-    icono: 'camara',
-    titulo: 'Detrás de cada cifra existe una voz que merece ser escuchada',
-    youtube: 'WWGLA6vL2yg',
-    w: {
-      '¿Qué es?':
-        'Es una entrevista audiovisual realizada a una mujer víctima del conflicto y del maltrato durante su vida, en la que comparte su historia personal para visibilizar las experiencias que viven muchas víctimas y generar conciencia en la audiencia.',
+        'Es un podcast basado en una mujer víctima del conflicto y del maltrato durante su vida, empezó a vivir la violencia intrafamiliar a los 6 años y el día de hoy tomo la fortaleza de contarnos su historia, té invitamos a que escuches su relato en el que comparte su historia personal para visibilizar las experiencias que viven muchas víctimas y generar conciencia en la audiencia.',
       '¿Por qué se presenta?':
         'Se presenta para dar a conocer una historia real de violencia y maltrato, sensibilizar a la audiencia sobre las consecuencias que estos hechos tienen en la vida de las víctimas y promover la reflexión sobre la protección de la niñez y la adolescencia.',
       '¿Cuándo se presenta?':
@@ -58,6 +32,32 @@ export const medios = [
       '¿Qué te llevó a buscar ayuda y quién estuvo a tu lado cuando más lo necesitabas?',
       '¿Cómo lograste transformar el dolor en fortaleza y qué aprendizaje te dejó este proceso?',
       'Mensaje para quienes hoy sufren en silencio ¿Qué le dirías a una persona que está viviendo violencia intrafamiliar y siente que no tiene salida?',
+    ],
+  },
+  {
+    id: 'entrevista',
+    formato: 'Entrevista',
+    icono: 'camara',
+    titulo: 'La experiencia cuenta historias que también pueden salvar vidas',
+    youtube: 'WWGLA6vL2yg',
+    w: {
+      '¿Qué es?':
+        'Es una entrevista audiovisual realizada a un policía pensionado de la Policía Nacional que trabajó durante 15 años en el área de Infancia y Adolescencia. A través de su experiencia profesional, comparte conocimientos, relatos de casos y reflexiones sobre los delitos que afectan a niños, niñas y adolescentes.',
+      '¿Por qué se presenta?':
+        'Se presenta para brindar una perspectiva profesional sobre la atención de los casos relacionados con la niñez y la adolescencia, sensibilizar a la audiencia sobre esta problemática y orientar a las víctimas y sus familias sobre los canales de apoyo y las rutas de atención disponibles.',
+      '¿Cuándo se presenta?':
+        'Se desarrolla a partir de la experiencia acumulada por el entrevistado durante sus 15 años de servicio en el área de Infancia y Adolescencia, donde tuvo contacto directo con diferentes casos y situaciones que marcaron su trayectoria profesional.',
+      '¿Dónde se presenta?':
+        'Se presenta en formato sonoro a través de un podcast, un espacio de conversación en el que el entrevistado comparte sus experiencias, relatos y recomendaciones relacionadas con la protección de la niñez y la adolescencia.',
+    },
+    guion: 'En este primer paso que realizaremos será la entrevista a un pensionado de la policía nacional de Colombia el cual se llevaran preguntas de los cargos en los cuales él estuvo presente en este caso estaremos hablando de los abusos que cometen con la infancia y adolescencia en Colombia más exactamente en Bogotá y también que nos cuente un poco la experiencia de estos casos y cuáles son los canales de comunicación que nos recomienda para alguien que quiere realizar una denuncia.',
+    preguntas: [
+      '¿Qué es lo más difícil que ha visto en su trabajo protegiendo a niños, niñas y adolescentes en Bogotá?',
+      '¿Cuáles son hoy los delitos que más están afectando a nuestros niños y adolescentes, tanto en las calles como en internet?',
+      'Cuando un menor es víctima de un delito, ¿cómo cambia su vida y la de su familia?',
+      '¿Qué señales nunca debemos ignorar y que podrían indicar que un niño está siendo víctima de violencia, abuso o explotación?',
+      'Muchas personas sospechan que algo está pasando, pero no denuncian. ¿Por qué es tan importante actuar a tiempo y cómo puede hacerlo cualquier ciudadano?',
+      'Si pudiera dejar un solo mensaje a los padres, docentes y ciudadanos de Bogotá para proteger a nuestros niños, ¿cuál sería?',
     ],
   },
   {
