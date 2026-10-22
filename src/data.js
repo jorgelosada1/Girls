@@ -11,6 +11,7 @@ export const medios = [
   {
     id: 'podcast',
     formato: 'Podcast',
+    icono: 'microfono',
     titulo: 'La experiencia cuenta historias que también pueden salvar vidas',
     youtube: 'TgIz4TAAAMw',
     w: {
@@ -35,6 +36,7 @@ export const medios = [
   {
     id: 'entrevista',
     formato: 'Entrevista',
+    icono: 'camara',
     titulo: 'Detrás de cada cifra existe una voz que merece ser escuchada',
     youtube: 'WWGLA6vL2yg',
     w: {
@@ -59,6 +61,7 @@ export const medios = [
   {
     id: 'interactivo',
     formato: 'Interactivo',
+    icono: 'conversacion',
     titulo: '¿Qué ves cuando miras esta realidad?',
     youtube: 'tNsknlz5oP8',
     w: {
@@ -74,6 +77,13 @@ export const medios = [
   },
 ]
 
+export const cifrasClave = [
+  { valor: 13228, etiqueta: 'casos registrados en Bogotá entre enero y junio de 2026' },
+  { valor: 12031, etiqueta: 'ocurrieron en vías públicas' },
+  { valor: 1156, etiqueta: 'casos de inasistencia alimentaria' },
+  { valor: 763, etiqueta: 'amenazas contra niños, niñas y adolescentes' },
+]
+
 export const infografia = {
   titulo: 'La infancia también es Bogotá',
   descripcion:
@@ -87,7 +97,7 @@ export const texto = {
     'Con base en los 13.228 casos registrados en Bogotá, se identifican otros hallazgos relevantes que ayudan a comprender mejor la situación de los delitos que afectan a niños, niñas y adolescentes.',
   bloques: [
     {
-      cifra: '12.031',
+      cifra: 12031,
       etiqueta: 'casos en vías públicas',
       parrafos: [
         'Según la base de datos Delitos Contra Niños y Adolescentes, la mayoría de los casos fueron reportados en vías públicas, donde se concentraron 12.031 registros, lo que evidencia que gran parte de los hechos ocurre en espacios abiertos y de circulación cotidiana.',
@@ -95,7 +105,7 @@ export const texto = {
       ],
     },
     {
-      cifra: '354',
+      cifra: 354,
       etiqueta: 'casos en establecimientos educativos',
       imagen: { src: '/img/valentina.jpg', alt: 'Ilustración de una niña que sufre burlas de sus compañeros en el colegio' },
       parrafos: [
@@ -104,7 +114,7 @@ export const texto = {
       ],
     },
     {
-      cifra: '1.156',
+      cifra: 1156,
       etiqueta: 'casos de inasistencia alimentaria',
       imagen: { src: '/img/samuel.jpg', alt: 'Ilustración de un niño que desayuna solo mientras su madre trabaja' },
       parrafos: [
@@ -113,15 +123,15 @@ export const texto = {
       ],
     },
     {
-      cifra: '1.136',
+      cifra: 1136,
       etiqueta: 'casos de hurto a personas',
-      imagen: { src: '/img/laura.jpg', alt: 'Ilustración de una adolescente usando su celular' },
+      imagen: { src: '/img/laura.jpg', foco: '50% 25%', alt: 'Ilustración de una adolescente usando su celular' },
       parrafos: [
         'También se reportaron 1.136 casos de hurto a personas. Entre ellos podría encontrarse Laura, una adolescente de 14 años que fue víctima del robo de su celular cuando regresaba a casa. Aunque el objeto pudo reemplazarse, la sensación de vulnerabilidad permaneció durante mucho tiempo y cambió la forma en que se desplazaba por su barrio.',
       ],
     },
     {
-      cifra: '763',
+      cifra: 763,
       etiqueta: 'amenazas registradas',
       imagen: { src: '/img/andres.jpg', alt: 'Ilustración de un niño preocupado con siluetas amenazantes detrás' },
       parrafos: [
@@ -130,7 +140,7 @@ export const texto = {
       ],
     },
     {
-      cifra: '228',
+      cifra: 228,
       etiqueta: 'casos de ejercicio arbitrario de la custodia',
       parrafos: [
         'Otro dato relevante corresponde a los 228 casos relacionados con el ejercicio arbitrario de la custodia de menores de edad. Detrás de esta cifra podría estar Sofía, una niña de 9 años que, tras la separación de sus padres, fue alejada de uno de ellos sin una decisión legal que lo justificara. Durante meses no pudo ver ni comunicarse con esa persona, situación que afectó su estabilidad emocional y sus relaciones familiares.',
