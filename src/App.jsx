@@ -226,6 +226,20 @@ function Video({ id, titulo, formato }) {
   )
 }
 
+// Las 5 W de la guía periodística de cada formato.
+function CincoW({ w }) {
+  return (
+    <dl className="ws">
+      {Object.entries(w).map(([pregunta, respuesta], i) => (
+        <Reveal key={pregunta} delay={0.1 + i * 0.08} y={30}>
+          <dt>{pregunta}</dt>
+          <dd>{respuesta}</dd>
+        </Reveal>
+      ))}
+    </dl>
+  )
+}
+
 function Capitulo({ medio, indice }) {
   const [verPreguntas, setVerPreguntas] = useState(false)
   return (
@@ -254,14 +268,7 @@ function Capitulo({ medio, indice }) {
               Ver en YouTube <Icono nombre="flecha" tamano={16} />
             </a>
           </Reveal>
-          <dl className="ws">
-            {Object.entries(medio.w).map(([pregunta, respuesta], i) => (
-              <Reveal key={pregunta} delay={0.1 + i * 0.08} y={30}>
-                <dt>{pregunta}</dt>
-                <dd>{respuesta}</dd>
-              </Reveal>
-            ))}
-          </dl>
+          <CincoW w={medio.w} />
         </div>
 
         {medio.preguntas && (
@@ -269,7 +276,7 @@ function Capitulo({ medio, indice }) {
             <button className="guion-boton" aria-expanded={verPreguntas} onClick={() => setVerPreguntas(!verPreguntas)}>
               <span>
                 <span className="etiqueta">Guion periodístico</span>
-                Las {medio.preguntas.length} preguntas de la entrevista
+                Ver el guion y las {medio.preguntas.length} preguntas
               </span>
               <motion.span className="guion-icono" animate={{ rotate: verPreguntas ? 45 : 0 }}>
                 <Icono nombre="mas" />
@@ -277,24 +284,28 @@ function Capitulo({ medio, indice }) {
             </button>
             <AnimatePresence initial={false}>
               {verPreguntas && (
-                <motion.ol
+                <motion.div
+                  className="guion-cuerpo"
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.5, ease: suave }}
                 >
-                  {medio.preguntas.map((p, i) => (
-                    <motion.li
-                      key={p}
-                      initial={{ opacity: 0, x: -16 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.1 + i * 0.05, ease: suave }}
-                    >
-                      <span>{String(i + 1).padStart(2, '0')}</span>
-                      {p}
-                    </motion.li>
-                  ))}
-                </motion.ol>
+                  <p className="guion-intro">{medio.guion}</p>
+                  <ol>
+                    {medio.preguntas.map((p, i) => (
+                      <motion.li
+                        key={p}
+                        initial={{ opacity: 0, x: -16 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.1 + i * 0.05, ease: suave }}
+                      >
+                        <span>{String(i + 1).padStart(2, '0')}</span>
+                        {p}
+                      </motion.li>
+                    ))}
+                  </ol>
+                </motion.div>
               )}
             </AnimatePresence>
           </Reveal>
@@ -322,10 +333,8 @@ function Infografia() {
           <Reveal as="h2" delay={0.05}>
             {infografia.titulo}
           </Reveal>
-          <Reveal as="p" delay={0.1}>
-            {infografia.descripcion}
-          </Reveal>
-          <Reveal delay={0.15}>
+          <CincoW w={infografia.w} />
+          <Reveal delay={0.15} className="infografia-accion">
             <button className="boton" onClick={() => dialogo.current.showModal()}>
               <Icono nombre="ampliar" tamano={18} /> Ver en grande
             </button>
@@ -363,10 +372,15 @@ function Texto() {
         <Reveal as="h2" delay={0.05}>
           {texto.titulo}
         </Reveal>
+      </header>
+      <div className="contenedor texto-ws">
+        <CincoW w={texto.w} />
+      </div>
+      <div className="contenedor texto-cabecera">
         <Reveal as="p" className="entradilla" delay={0.1}>
           {texto.entradilla}
         </Reveal>
-      </header>
+      </div>
 
       <div className="contenedor">
         {texto.bloques.map((b) => (

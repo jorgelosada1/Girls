@@ -924,11 +924,21 @@ button {
   background: var(--oliva);
 }
 
+.guion-cuerpo {
+  overflow: hidden;
+}
+
+.guion-intro {
+  margin: 0;
+  padding: 0 1.8rem 1.2rem;
+  color: #c4cad6;
+  max-width: 75ch;
+}
+
 .guion ol {
   list-style: none;
   margin: 0;
   padding: 0 1.8rem;
-  overflow: hidden;
 }
 
 .guion li {
@@ -966,11 +976,26 @@ button {
   align-items: center;
 }
 
-.infografia p {
+.infografia .ws > div {
+  background: #ffffff0d;
+  border-color: #ffffff17;
+}
+
+.infografia .ws dt {
+  color: #fff;
+}
+
+.infografia .ws dd {
   color: #c4cad6;
-  font-size: 1.1rem;
-  max-width: 42ch;
-  margin: 0 0 2rem;
+}
+
+.infografia-accion {
+  margin-top: 2rem;
+}
+
+.texto-ws .ws {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
 .marco-infografia {
@@ -1051,7 +1076,7 @@ button {
 .texto-cabecera {
   max-width: 900px;
   text-align: center;
-  margin-bottom: clamp(3rem, 7vw, 6rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
 .texto-cabecera h2 {
